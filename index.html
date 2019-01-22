@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train Time Choo Choo!</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Sign-Up Card-->
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            Enter a train:
+          </div>
+
+          <div class="card-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="destination-input">Destination:</label>
+                <input class="form-control" id="destination-input" type="email">
+              </div>
+              <div class="form-group row">
+                <label for="time-input">Time:</label>
+                <input class="form-control" id="time-input" type="number">
+              </div>
+              <div class="form-group row">
+                <label for="frequency-input">Frequency</label>
+                <input class="form-control" id="frequency-input" type="number">
+              </div>
+              <button class="btn btn-default" id="add-train" type="submit">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>  
+
+      <!-- Wells for displaying all users -->
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            All Trains
+          </div>
+          <div class="card-body">
+            <div id="full-train-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
